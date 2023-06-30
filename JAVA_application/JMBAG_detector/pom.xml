@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.fer.fpavicic</groupId>
+	<artifactId>JMBAG_detector</artifactId>
+	<version>1.0</version>
+	<packaging>jar</packaging>
+
+	<!-- configuration of basic properties -->
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<maven.compiler.source>15</maven.compiler.source>
+		<maven.compiler.target>15</maven.compiler.target>
+		<maven.compiler.showDeprecation>true</maven.compiler.showDeprecation>
+		<junit.jupiter.version>5.7.0</junit.jupiter.version>
+	</properties>
+
+	<dependencies>
+		<!-- https://mvnrepository.com/artifact/org.deeplearning4j/deeplearning4j-core -->
+		<dependency>
+		    <groupId>org.deeplearning4j</groupId>
+		    <artifactId>deeplearning4j-core</artifactId>
+		    <version>1.0.0-M2.1</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.nd4j/nd4j-native -->
+		<dependency>
+		 <groupId>org.nd4j</groupId>
+		 <artifactId>nd4j-native</artifactId>
+		 <version>1.0.0-M2.1</version>
+
+		</dependency>
+	</dependencies>
+	
+	<build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-shade-plugin</artifactId>
+        <version>3.2.4</version>
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <goals>
+              <goal>shade</goal>
+            </goals>
+            <configuration>
+              <artifactSet>
+                <includes>
+                  <!-- Specify the library artifact you want to shade -->
+                  <include>com.fer.fpavicic:JMBAG_detector</include>
+                </includes>
+              </artifactSet>
+              <filters>
+                <filter>
+                  <!-- Exclude all dependencies from being included in the shaded JAR -->
+                  <artifact>*:*</artifact>
+                  <excludes>
+                    <exclude>*</exclude>
+                  </excludes>
+                </filter>
+              </filters>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+</project>
+

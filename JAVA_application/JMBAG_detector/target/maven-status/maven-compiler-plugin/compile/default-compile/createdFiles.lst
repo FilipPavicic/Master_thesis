@@ -1,0 +1,13 @@
+fer\fpavicic\jmbagDetector\loaders\ImageBatchLoader.class
+fer\fpavicic\jmbagDetector\loaders\IImageBatchLoader.class
+fer\fpavicic\jmbagDetector\transformations\ResizeImageWithInterpolationTransform.class
+fer\fpavicic\jmbagDetector\loaders\DatasetBatchLoader.class
+fer\fpavicic\jmbagDetector\dataset\Dataset.class
+fer\fpavicic\jmbagDetector\Example1.class
+fer\fpavicic\jmbagDetector\visitors\DatasetVisitor.class
+fer\fpavicic\jmbagDetector\metrics\AccuracyCalculator.class
+fer\fpavicic\jmbagDetector\Example2.class
+fer\fpavicic\jmbagDetector\tools\Tools.class
+fer\fpavicic\jmbagDetector\loaders\DatasetBatchLoader$1.class
+fer\fpavicic\jmbagDetector\loaders\ImageLoader.class
+fer\fpavicic\jmbagDetector\model\Model.class

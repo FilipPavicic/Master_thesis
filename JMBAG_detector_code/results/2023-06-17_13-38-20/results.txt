@@ -1,0 +1,31 @@
+timestamp: 2023-06-17_13-38-20
+Dropout: 0.3
+Channels: [16, 16, 32, 64]
+Final Channel: 16
+Org Prob: 0.5
+
+Other parameters
+Image size: (128, 128)
+Batch size: 64
+k_folds: 5
+learning_rate: 0.0015
+decay_rate: 0.9
+decay_step: 20
+epochs: 150
+
+Transforms: Compose([
+  Rotate(always_apply=False, p=0.4, limit=(-6, 6), interpolation=1, border_mode=4, value=None, mask_value=1, method='largest_box', crop_border=False),
+  ShiftScaleRotate(always_apply=False, p=0.3, shift_limit_x=(-0.0, 0.0), shift_limit_y=(-0.0, 0.0), scale_limit=(-0.09999999999999998, 0.10000000000000009), rotate_limit=(0, 0), interpolation=1, border_mode=0, value=1, mask_value=1, rotate_method='largest_box'),
+  ShiftScaleRotate(always_apply=False, p=0.3, shift_limit_x=(-0.1, 0.1), shift_limit_y=(-0.1, 0.1), scale_limit=(0.0, 0.0), rotate_limit=(0, 0), interpolation=1, border_mode=0, value=1, mask_value=1, rotate_method='largest_box'),
+], p=1.0, bbox_params=None, keypoint_params=None, additional_targets={})
+
+Results from fold 0
+Validation accuracy: 331/342 (0.9678362573099415)
+Traininig accuracy: 1338/1367 (0.9787856620336504)
+
+Validation alpha: 326/327 (0.9969418960244648)
+Traininig alpha: 1304/1306 (0.998468606431853)
+
+Validation beta: 326/333 (0.978978978978979)
+Traininig beta: 1304/1323 (0.9856386999244142)
+

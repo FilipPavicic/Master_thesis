@@ -1,0 +1,78 @@
+timestamp: 2023-06-17_17-08-36
+Dropout: 0.3
+Channels: [64, 64, 128, 256]
+Final Channel: 64
+Org Prob: 0.5
+
+Other parameters
+Image size: (128, 128)
+Batch size: 64
+k_folds: 5
+learning_rate: 0.0015
+decay_rate: 0.9
+decay_step: 20
+epochs: 150
+
+Transforms: Compose([
+  Rotate(always_apply=False, p=0.4, limit=(-6, 6), interpolation=1, border_mode=4, value=None, mask_value=1, method='largest_box', crop_border=False),
+  ShiftScaleRotate(always_apply=False, p=0.3, shift_limit_x=(-0.0, 0.0), shift_limit_y=(-0.0, 0.0), scale_limit=(-0.09999999999999998, 0.10000000000000009), rotate_limit=(0, 0), interpolation=1, border_mode=0, value=1, mask_value=1, rotate_method='largest_box'),
+  ShiftScaleRotate(always_apply=False, p=0.3, shift_limit_x=(-0.1, 0.1), shift_limit_y=(-0.1, 0.1), scale_limit=(0.0, 0.0), rotate_limit=(0, 0), interpolation=1, border_mode=0, value=1, mask_value=1, rotate_method='largest_box'),
+], p=1.0, bbox_params=None, keypoint_params=None, additional_targets={})
+
+Results from fold 0
+Validation accuracy: 339/342 (0.9912280701754386)
+Traininig accuracy: 1367/1367 (1.0)
+
+Validation alpha: 332/332 (1.0)
+Traininig alpha: 1323/1323 (1.0)
+
+Validation beta: 332/333 (0.996996996996997)
+Traininig beta: 1323/1323 (1.0)
+
+Results from fold 1
+Validation accuracy: 332/342 (0.9707602339181286)
+Traininig accuracy: 1367/1367 (1.0)
+
+Validation alpha: 325/327 (0.9938837920489296)
+Traininig alpha: 1324/1324 (1.0)
+
+Validation beta: 325/332 (0.9789156626506024)
+Traininig beta: 1324/1324 (1.0)
+
+Results from fold 2
+Validation accuracy: 331/342 (0.9678362573099415)
+Traininig accuracy: 1367/1367 (1.0)
+
+Validation alpha: 322/324 (0.9938271604938271)
+Traininig alpha: 1327/1327 (1.0)
+
+Validation beta: 322/329 (0.9787234042553191)
+Traininig beta: 1327/1327 (1.0)
+
+Results from fold 3
+Validation accuracy: 329/342 (0.9619883040935673)
+Traininig accuracy: 1367/1367 (1.0)
+
+Validation alpha: 323/327 (0.9877675840978594)
+Traininig alpha: 1324/1324 (1.0)
+
+Validation beta: 323/332 (0.9728915662650602)
+Traininig beta: 1324/1324 (1.0)
+
+Results from fold 4
+Validation accuracy: 326/341 (0.9560117302052786)
+Traininig accuracy: 1368/1368 (1.0)
+
+Validation alpha: 319/320 (0.996875)
+Traininig alpha: 1326/1326 (1.0)
+
+Validation beta: 319/330 (0.9666666666666667)
+Traininig beta: 1326/1326 (1.0)
+
+Total results:
+Val Accuracy mean: 0.9695649191404708
+Train Accuracy mean: 1.0
+Val Alpha mean: 0.9944707073281231
+Train Alpha mean: 1.0
+Val Beta mean: 0.978838859366929
+Train Beta mean: 1.0

@@ -1,0 +1,15 @@
+2023-06-14_12-23-26	 dropout=0.3/channels=[64, 64, 128, 256]/final_channel=64/org_prob=0.7
+2023-06-14_14-02-38	 dropout=0.3/channels=[64, 64, 128, 256]/final_channel=64/org_prob=0.5
+2023-06-14_15-37-26	 dropout=0.3/channels=[64, 64, 128, 256]/final_channel=64/org_prob=0.3
+2023-06-14_17-20-38	 dropout=0.1/channels=[64, 64, 128, 256]/final_channel=64/org_prob=0.5
+2023-06-14_18-54-44	 dropout=None/channels=[64, 64, 128, 256]/final_channel=64/org_prob=0.5
+2023-06-15_10-48-03	 dropout=0.3/channels=[64, 64, 128, 256]/final_channel=64/org_prob=0.5
+2023-06-15_12-25-19	 dropout=0.3/channels=[64, 64, 128, 256]/final_channel=64/org_prob=0.5
+2023-06-15_14-05-25	 dropout=0.3/channels=[32, 32, 64, 128]/final_channel=32/org_prob=0.5
+2023-06-15_15-36-04	 dropout=0.3/channels=[16, 16, 32, 64]/final_channel=16/org_prob=0.5
+2023-06-17_13-38-20	 dropout=0.3/channels=[16, 16, 32, 64]/final_channel=16/org_prob=0.5
+2023-06-17_14-15-38	 dropout=0.3/channels=[64, 64, 128, 256]/final_channel=64/org_prob=0.5
+2023-06-17_17-08-36	 dropout=0.3/channels=[64, 64, 128, 256]/final_channel=64/org_prob=0.5
+2023-06-18_11-48-07	 dropout=0.3/channels=[64, 64, 128, 256]/final_channel=64/org_prob=0.5
+2023-06-18_12-29-02	 dropout=0.3/channels=[64, 64, 128, 256]/final_channel=64/org_prob=0.5
+2023-06-18_12-30-50	 dropout=0.3/channels=[64, 64, 128, 256]/final_channel=64/org_prob=0.5
